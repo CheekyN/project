@@ -1,6 +1,43 @@
-button {
-    font-size: 30px;
-    width: 200px;
-    margin-left: 850px;
-    margin-top: 350px;
+
+
+.timer__text {
+    font-size: 20px;
+}
+
+.timer__time {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px;
+}
+
+.timer__item {
+    position: relative;
+    display: inline-block;
+    min-width: 75px;
+    vertical-align: top;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.timer__item:after {
+    content: ':';
+    position: absolute;
+    right: -10px;
+    top: 0px;
+    display: block;
+    font-size: 20px;
+}
+
+.timer__item:last-child:after {
+    display: none;
+}
+
+.timer__item span {
+    display: block;
+    font-size: 20px;
+}
+
+.timer__item__numbers {
+    margin-bottom: 10px;
+    font-weight: bold;
 }
