@@ -17,9 +17,12 @@ function countdown() {
         const secText = document.getElementById('seconds');
 
         
-        const dateNow = new Date();
+        const dateNow = moment().format('HH:mm:ss').getTime();
         // dateNow.setMilliseconds  (dateNow.getMilliseconds());
-        const dateFinish = new Date("4/9/2019");
+        const dateFinish = moment().format('HH:mm:ss').getTime();
+        dateFinish.add(23, 'hours');
+        dateFinish.add(59, 'minutes');
+        dateFinish.add(59, 'seconds');
         
         // dateFinish.setSeconds(dateFinish.getSeconds() + 86400000);  
         // dateFinish.setMilliseconds(dateFinish.getMilliseconds() + 86400000);
@@ -42,17 +45,8 @@ function countdown() {
 
 countdown();
 
-
-
-
-
-
-
-
-
-
-
-
+// https://ru.stackoverflow.com/questions/632528/%D0%92%D1%8B%D1%87%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B4%D0%B0%D1%82-%D0%B8-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8-%D0%B2-js
+// https://flaviocopes.com/momentjs/ 
 
 
 
